@@ -2,7 +2,6 @@ import customtkinter
 import tkinter
 
 
-# Classe para a criação da janela de teste
 class Tela(customtkinter.CTk):
     def __init__(self):
         super().__init__()

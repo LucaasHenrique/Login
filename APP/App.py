@@ -5,14 +5,12 @@ from tkinter import messagebox
 app = None
 
 
-# Função que insere os dados digitados no banco de dados
 def insert():
     bk.create(app.email.get(), app.senha.get())
     messagebox.showinfo('cadastro', 'cadastro feito com sucesso')
     app.clear()
 
 
-# Função que verifica se os dados digitados existem no banco de dados
 def verificarLogin():
     dados_login = bk.read()
     login = False
